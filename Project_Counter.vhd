@@ -1,0 +1,60 @@
+--Model an n-bit binary up/down counter with synchronous clear and
+--preset.
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+entity counter is
+generic ( n: positive := 3 );
+port ( up_down, enable, clk, reset: in std_logic;
+       --d_in : in  unsigned (n-1 downto 0);
+       empty_flag, full_flag: out std_logic;
+	d_out: out std_logic_vector (n-1 downto 0));
+end entity counter;
+
+architecture behav of counter is
+	signal counter: unsigned (n-1 downto 0):="000";
+	signal e_flag: std_logic:='1';
+	signal f_flag: std_logic:='0';
+	--counter:="000";
+begin
+	--counter<="000";
+	ct: process (clk, reset) is begin
+                if reset = '1' then
+			counter <= (others => '0');
+			e_flag<='1';
+			f_flag<='0';
+		elsif rising_edge (clk) and enable='1' then
+			if up_down = '1' then
+				e_flag<='0';
+				if counter < "111" then
+					if counter < "110" then
+		   			    counter <= counter + 1;
+					else
+					    counter <= counter + 1;
+					    f_flag<='1';
+					end if;
+				else
+					f_flag<='1';
+				end if;
+			else
+				f_flag<='0';
+				if counter > "000" then
+					if counter > "001" then
+					    counter <= counter - 1;
+					else
+					    counter <= counter - 1;
+					    e_flag<='1';
+					end if;
+				else
+					e_flag<='1';
+				end if;
+					
+			end if;
+		end if;
+	end process ct;
+	d_out <= std_logic_vector(unsigned(counter));
+	empty_flag <= e_flag;
+	full_flag <= f_flag;
+end architecture behav;

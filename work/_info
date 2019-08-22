@@ -1,0 +1,586 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Hazem/ITI/VHDL/Final Project
+Ebcd_7segment
+Z1 w1548451288
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8E:/Hazem/ITI/VHDL/Final Project/Project_seven_segment_decoder.vhd
+Z5 FE:/Hazem/ITI/VHDL/Final Project/Project_seven_segment_decoder.vhd
+l0
+L4
+V5DiKMZM4Ch>;53P72R9Ui1
+!s100 mj;Mdb^8oJn6]1E`I_:eC0
+Z6 OV;C;10.4b;61
+32
+Z7 !s110 1548451292
+!i10b 1
+Z8 !s108 1548451291.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_seven_segment_decoder.vhd|
+Z10 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_seven_segment_decoder.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehavioral
+R2
+R3
+DEx4 work 12 bcd_7segment 0 22 5DiKMZM4Ch>;53P72R9Ui1
+l11
+L9
+VIP`ZhSP7IIYNV@^YL95ge2
+!s100 2>Q:H_l@CLh200BoJBXX;3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecounter
+Z13 w1548851755
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8E:/Hazem/ITI/VHDL/Final Project/Project_Counter.vhd
+Z16 FE:/Hazem/ITI/VHDL/Final Project/Project_Counter.vhd
+l0
+L8
+VkQDXlP]DKZC@^N[Q:7;JY2
+!s100 [^gLU14kaio:S=R>JQ7`^3
+R6
+32
+Z17 !s110 1549582190
+!i10b 1
+Z18 !s108 1549582190.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_Counter.vhd|
+Z20 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_Counter.vhd|
+!i113 1
+R11
+R12
+Abehav
+R14
+R2
+R3
+Z21 DEx4 work 7 counter 0 22 kQDXlP]DKZC@^N[Q:7;JY2
+l21
+L16
+VRJ:UJB?B;YVQU6b>bbX7b1
+!s100 me4EJYU8dZBAeM7U2`HaA1
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Eedgedetector
+Z22 w1548506095
+R2
+R3
+R0
+Z23 8E:/Hazem/ITI/VHDL/Final Project/Project_EdgeDetector.vhd
+Z24 FE:/Hazem/ITI/VHDL/Final Project/Project_EdgeDetector.vhd
+l0
+L4
+V=bV7C<LmgedSc9Y`^j@US0
+!s100 nZm28Ri679d@oG04VOFg10
+R6
+32
+R17
+!i10b 1
+R18
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_EdgeDetector.vhd|
+Z26 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_EdgeDetector.vhd|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+Z27 DEx4 work 12 edgedetector 0 22 =bV7C<LmgedSc9Y`^j@US0
+l17
+L12
+VfbaX=iE4FVmXDdP<[IzLh0
+!s100 eHU]B3z=heB3Te6H]d7032
+R6
+32
+R17
+!i10b 1
+R18
+R25
+R26
+!i113 1
+R11
+R12
+Aedgedetector_rtl
+R2
+R3
+R27
+l17
+L12
+V4ZVfldW>Ad3aiEmhmU0V93
+!s100 heV56V5Y908UAD[`N^X1W1
+R6
+32
+Z28 !s110 1548432944
+!i10b 1
+Z29 !s108 1548432944.000000
+R25
+R26
+!i113 1
+R11
+R12
+w1548253261
+Efsm
+Z30 w1548850251
+R2
+R3
+R0
+Z31 8E:/Hazem/ITI/VHDL/Final Project/Project_Mealy.vhd
+Z32 FE:/Hazem/ITI/VHDL/Final Project/Project_Mealy.vhd
+l0
+L4
+VLCJNaDQ`>bLW2EcZ^@j_H2
+!s100 eliNS@:E=e0?=JW7Rk1Fl3
+R6
+32
+Z33 !s110 1549582191
+!i10b 1
+Z34 !s108 1549582191.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_Mealy.vhd|
+Z36 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_Mealy.vhd|
+!i113 1
+R11
+R12
+Amealy_2p
+R2
+R3
+Z37 DEx4 work 3 fsm 0 22 LCJNaDQ`>bLW2EcZ^@j_H2
+l15
+L11
+VYFH[n^DToa22aRC_Le74d3
+!s100 2X5JBD`ETJNoSMmLzZFB?0
+R6
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R11
+R12
+Eproject_counter
+Z38 w1548369679
+R14
+R2
+R3
+R0
+R15
+R16
+l0
+L7
+Vi>ezf]<2J5[7H_D>AF@bM2
+!s100 17NMiEDgBzz5`[aa9^2CK0
+R6
+32
+R28
+!i10b 1
+R29
+R19
+R20
+!i113 1
+R11
+R12
+Abehav
+R14
+R2
+R3
+DEx4 work 15 project_counter 0 22 i>ezf]<2J5[7H_D>AF@bM2
+l18
+L15
+VOimQC^2PRIgXnZMbXm0jM0
+!s100 S2FPjTdmmB@CgK@1d8JA?2
+R6
+32
+R28
+!i10b 1
+R29
+R19
+R20
+!i113 1
+R11
+R12
+Eproject_fsm
+Z39 w1548349400
+R2
+R3
+R0
+R31
+R32
+l0
+L4
+V[^=KHQnZ2R6k^=Zi`^W:03
+!s100 [cV@Hjz>6YIF0^VmMWmA`1
+R6
+32
+Z40 !s110 1548452748
+!i10b 1
+Z41 !s108 1548452748.000000
+R35
+R36
+!i113 1
+R11
+R12
+Amealy_2p
+R2
+R3
+DEx4 work 11 project_fsm 0 22 [^=KHQnZ2R6k^=Zi`^W:03
+l15
+L11
+VU7`:X3=Qh1R_TWf^zB]_81
+!s100 C69Jc@?AOd64n?8YOOjgN1
+R6
+32
+R40
+!i10b 1
+R41
+R35
+R36
+!i113 1
+R11
+R12
+Eproject_rom
+Z42 w1548518854
+Z43 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z44 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z45 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R0
+Z46 8E:/Hazem/ITI/VHDL/Final Project/Project_ROM.vhd
+Z47 FE:/Hazem/ITI/VHDL/Final Project/Project_ROM.vhd
+l0
+L7
+V_WcMUbeLdj=3LZEzEbGZ=3
+!s100 cNZ2`2h5H[0?iCXFJdz`>3
+R6
+32
+Z48 !s110 1548518872
+!i10b 1
+Z49 !s108 1548518872.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_ROM.vhd|
+Z51 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_ROM.vhd|
+!i113 1
+R11
+R12
+Aproject_rom
+R43
+R44
+R45
+R2
+R3
+DEx4 work 11 project_rom 0 22 _WcMUbeLdj=3LZEzEbGZ=3
+l43
+L22
+VY9]d420`JV_e_Qe6NA8gK1
+!s100 k9zYJzjLSE1Me1<1=nPW=2
+R6
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R11
+R12
+Erom
+Z52 w1549402778
+R43
+R44
+R45
+R2
+R3
+R0
+R46
+R47
+l0
+L7
+VziPGo?`ZA>5^_PMJQ[0@02
+!s100 96R>_ALSn3Fez2Wn`7^QK1
+R6
+32
+R33
+!i10b 1
+R34
+R50
+R51
+!i113 1
+R11
+R12
+Abehav
+R43
+R44
+R45
+R2
+R3
+Z53 DEx4 work 3 rom 0 22 ziPGo?`ZA>5^_PMJQ[0@02
+l43
+L22
+Va@j;?cmU^1OW?4kX1NA[O3
+!s100 OU?GZm^P04cb;jgbKiKdM1
+R6
+32
+R33
+!i10b 1
+R34
+R50
+R51
+!i113 1
+R11
+R12
+Erom_out_converter
+Z54 w1549582014
+R2
+R3
+R0
+Z55 8E:\Hazem\ITI\VHDL\Final Project\Project_ROM_out_converter.vhd
+Z56 FE:\Hazem\ITI\VHDL\Final Project\Project_ROM_out_converter.vhd
+l0
+L4
+VMkDb4KA5IN1^]HeaTJCL:1
+!s100 >4P<[nBa=e<KXii48cDGe3
+R6
+32
+R33
+!i10b 1
+R34
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Hazem\ITI\VHDL\Final Project\Project_ROM_out_converter.vhd|
+Z58 !s107 E:\Hazem\ITI\VHDL\Final Project\Project_ROM_out_converter.vhd|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+Z59 DEx4 work 17 rom_out_converter 0 22 MkDb4KA5IN1^]HeaTJCL:1
+l10
+L9
+VQ1RLC=mbD67U479mY:ZNi1
+!s100 98<97T]9k[1S4n9WO;fjz3
+R6
+32
+R33
+!i10b 1
+R34
+R57
+R58
+!i113 1
+R11
+R12
+Esbqm
+Z60 w1549582061
+R14
+R2
+R3
+R0
+Z61 8E:\Hazem\ITI\VHDL\Final Project\Project_Final_Architecture.vhd
+Z62 FE:\Hazem\ITI\VHDL\Final Project\Project_Final_Architecture.vhd
+l0
+L5
+VaVZ2GbiH=10dz[^>><1BS2
+!s100 =PYbCANNAi1MU5EFHY`1e3
+R6
+32
+R33
+!i10b 1
+R18
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\Hazem\ITI\VHDL\Final Project\Project_Final_Architecture.vhd|
+Z64 !s107 E:\Hazem\ITI\VHDL\Final Project\Project_Final_Architecture.vhd|
+!i113 1
+R11
+R12
+Astruct
+Z65 DEx4 work 9 seven_seg 0 22 ;eaH`IzEB41LR@VdZ_4_Z2
+R59
+R43
+R44
+R45
+R53
+R21
+R37
+R27
+R14
+R2
+R3
+Z66 DEx4 work 4 sbqm 0 22 aVZ2GbiH=10dz[^>><1BS2
+l89
+L15
+V0o`zLmB=6]JZQ:c[mXOPQ2
+!s100 H[oYfD[FNJCIJ2bMH=?V31
+R6
+32
+R33
+!i10b 1
+R18
+R63
+R64
+!i113 1
+R11
+R12
+Eseven_seg
+Z67 w1549371883
+R2
+R3
+R0
+Z68 8E:/Hazem/ITI/VHDL/Final Project/Project_Seven_Segment_Decoder.vhd
+Z69 FE:/Hazem/ITI/VHDL/Final Project/Project_Seven_Segment_Decoder.vhd
+l0
+L3
+V;eaH`IzEB41LR@VdZ_4_Z2
+!s100 ]mCPjmOPb;gT;5DgPGCEj3
+R6
+32
+R33
+!i10b 1
+R34
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_Seven_Segment_Decoder.vhd|
+Z71 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_Seven_Segment_Decoder.vhd|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+R65
+l8
+L7
+Va?VK[5BW2`QaAmIR`_UA[3
+!s100 MO;SCFRlGO5M1>YaT_fI=0
+R6
+32
+R33
+!i10b 1
+R34
+R70
+R71
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+R65
+l8
+L7
+VAT7>QNIU@Gm2mQ5jkD[;T0
+!s100 PHjJ=X873k7_keMNdSa2l3
+R6
+32
+!s110 1548621820
+!i10b 1
+!s108 1548621820.000000
+R70
+R71
+!i113 1
+R11
+R12
+w1548518819
+Eseven_seg_converter
+Z72 w1548619889
+R2
+R3
+R0
+Z73 8E:/Hazem/ITI/VHDL/Final Project/Project_sev_seg_converter.vhd
+Z74 FE:/Hazem/ITI/VHDL/Final Project/Project_sev_seg_converter.vhd
+l0
+L4
+VUaJbze8Xd5zYVWgMaglNa1
+!s100 P1=AmVDS6E3;zlc99DhWh1
+R6
+32
+Z75 !s110 1549439504
+!i10b 1
+Z76 !s108 1549439504.000000
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_sev_seg_converter.vhd|
+Z78 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_sev_seg_converter.vhd|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 19 seven_seg_converter 0 22 UaJbze8Xd5zYVWgMaglNa1
+l10
+L9
+V;;5]hLOX=mSZ0Ca=?1XfR2
+!s100 E7Cf^D;JbaT<Ua@U6a3@L0
+R6
+32
+R75
+!i10b 1
+R76
+R77
+R78
+!i113 1
+R11
+R12
+Etestbench
+Z79 w1549415379
+R43
+R2
+R3
+R0
+Z80 8E:/Hazem/ITI/VHDL/Final Project/Project_testbench.vhd
+Z81 FE:/Hazem/ITI/VHDL/Final Project/Project_testbench.vhd
+l0
+L8
+V8RdCiec6hlKHanK<4_OF?2
+!s100 =H6II^n=3A<4<77b`iW?j2
+R6
+32
+R33
+!i10b 1
+R34
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Hazem/ITI/VHDL/Final Project/Project_testbench.vhd|
+Z83 !s107 E:/Hazem/ITI/VHDL/Final Project/Project_testbench.vhd|
+!i113 1
+R11
+R12
+Atest_dff
+R14
+R66
+R43
+R2
+R3
+Z84 DEx4 work 9 testbench 0 22 8RdCiec6hlKHanK<4_OF?2
+l32
+L12
+Z85 Vl;@]Nc0>EAY[AB5l]l9]31
+Z86 !s100 NeE>c7PeE9@kBBkIDNVFo3
+R6
+32
+R33
+!i10b 1
+R34
+R82
+R83
+!i113 1
+R11
+R12

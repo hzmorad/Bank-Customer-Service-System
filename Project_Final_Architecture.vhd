@@ -1,0 +1,109 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY SBqm IS 
+  PORT ( clk, reset: in std_logic;
+	q_in, q_out: in std_logic;
+	teller_1, teller_2, teller_3: in std_logic;
+	empty_fg, full_fg: out std_logic;
+	seven_segment_1: out std_logic_vector (6 downto 0);
+	seven_segment_2: out std_logic_vector (6 downto 0);
+	seven_segment_3: out std_logic_vector (6 downto 0));
+END ENTITY SBqm;
+
+Architecture struct of SBqm is
+component EdgeDetector
+port (
+      clk      :in std_logic;
+      d        :in std_logic;
+      edge     :out std_logic
+   );
+end component EdgeDetector;
+for sys_EdgeDetector_1: EdgeDetector use entity work.EdgeDetector(behav);
+for sys_EdgeDetector_2: EdgeDetector use entity work.EdgeDetector(behav);
+
+component fsm
+port (
+     clk, reset : in std_logic;
+     qin,qout: in std_logic;
+     empty_flag, full_flag: in std_logic;
+     count_state, count_enable: out std_logic
+  );
+end component fsm;
+for sys_fsm: fsm use entity work.fsm(mealy_2p);
+
+component counter
+generic ( n: positive := 3 );
+port (
+      up_down, enable, clk, reset: in std_logic;
+      empty_flag, full_flag: out std_logic;
+      d_out: out std_logic_vector (n-1 downto 0)
+  );
+end component counter;
+for sys_counter: counter use entity work.counter(behav);
+
+component rom
+generic ( c: integer := 3;
+          m: integer := 8);
+port (
+      counter_value: in std_logic_vector (c-1 downto 0);
+      teller_1: in std_logic;
+      teller_2: in std_logic;
+      teller_3: in std_logic;
+      clk: in std_logic;
+      data: out std_logic_vector (m-1 downto 0)
+  );
+end component rom;
+for sys_rom: rom use entity work.rom(behav);
+
+component ROM_out_converter
+Port ( 
+      input  : in STD_LOGIC_VECTOR (7 downto 0);
+      output : out STD_LOGIC_VECTOR (7 downto 0)
+  );
+end component ROM_out_converter;
+for sys_ROM_out_converter: ROM_out_converter use entity work.ROM_out_converter(behav);
+
+component seven_seg
+Port ( 
+      BCDin : in STD_LOGIC_VECTOR (3 downto 0);
+      Seven_Segment : out STD_LOGIC_VECTOR (6 downto 0)
+  );
+end component seven_seg;
+for sys_seven_seg_1: seven_seg use entity work.seven_seg(behav);
+for sys_seven_seg_2: seven_seg use entity work.seven_seg(behav);
+for sys_seven_seg_3: seven_seg use entity work.seven_seg(behav);
+
+signal edge_1: std_logic;
+signal edge_2: std_logic;
+signal up_down_state: std_logic;
+signal count_en: std_logic;
+signal emp_flag: std_logic;
+signal f_flag: std_logic;
+signal queue_count: std_logic_vector (2 downto 0);
+signal rom_out: std_logic_vector (7 downto 0);
+signal segs_converter_out: std_logic_vector (7 downto 0);
+signal seg_pcount: std_logic_vector (3 downto 0);
+
+begin
+
+sys_EdgeDetector_1: EdgeDetector port map (clk, q_in, edge_1);
+sys_EdgeDetector_2: EdgeDetector port map (clk, q_out, edge_2);
+
+sys_fsm: fsm port map (clk, reset, edge_1, edge_2, emp_flag, f_flag, up_down_state, count_en);
+
+sys_counter: counter port map (up_down_state, count_en, clk, reset, emp_flag, f_flag, queue_count);
+
+sys_rom: rom port map (queue_count, teller_1, teller_2, teller_3, clk, rom_out);
+
+sys_ROM_out_converter: ROM_out_converter port map (rom_out, segs_converter_out);
+seg_pcount <= '0' & queue_count;
+sys_seven_seg_1: seven_seg port map (seg_pcount, seven_segment_1);
+sys_seven_seg_2: seven_seg port map (segs_converter_out(3 downto 0), seven_segment_2);
+sys_seven_seg_3: seven_seg port map (segs_converter_out(7 downto 4), seven_segment_3);
+empty_fg <= emp_flag;
+full_fg <= f_flag;
+
+end architecture struct;
+
